@@ -1,38 +1,100 @@
-.App {
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 100%;
+letter-spacing: 1px;
+background-color: #F3F3FB;
+}
+.heading{
+  font-family: "Roboto";
+  font-size: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  color:grey
+}
+.container{
+  height: 100%;
+  margin: 2em auto;
+  padding: 0px 20px;
+}
+li{
+  list-style-type: none;
+  
+}
+.comments-container{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media screen and (min-width:768px) {
+  .comments-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+  }
+  
+}
+.comment{
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius:4px ;
+  box-shadow:0px 2px 7px #BCBCCC ;
+}
+.mail{
+  font-size: 16px;
+  color: #2F334D;
+}
+.name{
+  font-size: 16px;
+  color: #84849C;
+  text-transform: capitalize;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  
+}
+.para{
+  font-size: 16px;
+  color: #84849C;
+  letter-spacing: 1px;
+}
+.comment-header{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.pofile-card{
+  height:270px ;
+  width: 370px;
+  box-shadow:0px 0px 10px 2px rgb(222, 219, 219) ;
+  margin-left: 15px;
+}
+.pofile-card img {
+  height:100% ;
+  width: 100%;
+  max-height: 150px;
+}
+.pofile-card .title{
+  margin-top: 20px;
+}
+.title{
+  font-size: 15px;
+  color: red;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
 }
